@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 def hash(password: str) -> str:
-    """Хеширование данных"""
+    # Логика хеширования данных
     return sha3.sha3_224(password.encode("utf-8")).hexdigest()
 
 
@@ -59,7 +59,7 @@ class Server:
             t.start()
 
     def send_message(self, conn, data: Union[str, Dict[str, Any]], ip: str) -> None:
-        """Отправка данных"""
+        # Отправка данных
         data_text = data
         if type(data) == dict:
             data = json.dumps(data, ensure_ascii=False)
@@ -69,7 +69,7 @@ class Server:
         logging.info(f"Сообщение {data_text} было отправлено клиенту {ip}")
 
     def socket_init(self):
-        """Инициализация сокета"""
+        # Инициализация сокета
         sock = socket.socket()
         sock.bind(("", self.port_number))
         sock.listen(0)
@@ -77,9 +77,8 @@ class Server:
         self.sock = sock
 
     def message_logic(self, conn, client_ip):
-        """
-        Получение сообщений
-        """
+        # Получение сообщений
+        
         data = ""
         while True:
             # Получаем данные и собираем их по кусочкам
@@ -119,9 +118,8 @@ class Server:
                 break
 
     def reg_logic(self, conn, addr):
-        """
-        Логика регистрации пользователя
-        """
+        #Логика регистрации пользователя
+        
         data = json.loads(conn.recv(1024).decode())
         newuser_password, newuser_username = hash(data["password"]), data["username"]
         newuser_ip = addr[0]
@@ -136,17 +134,14 @@ class Server:
         logger.info(f"Клиент {newuser_ip}. Отправили данные о результате регистрации")
 
     def auth_logic(self, conn, addr):
-        """
-        Логика авторизации клиента
-        Запрос авторизации у нас априори меньше 1024, так что никакой цикл не запускаем
-        """
+        # Логика авторизации клиента, без циклов, потому что не имеет смысла
         user_password = hash(json.loads(conn.recv(1024).decode())["password"])
         client_ip = addr[0]
 
         # Проверяем на существование данных
         auth_result, username = self.database.user_auth(client_ip, user_password)
 
-        # Если авторизация прошла успешно
+        # авторизация прошла успешно
         if auth_result == 1:
             logger.info(f"Клиент {client_ip} -> авторизация прошла успешно")
             data = {"result": True, "body": {"username": username}}
@@ -154,11 +149,11 @@ class Server:
                 self.authenticated_list.append(client_ip)
                 self.ip2username_dict[client_ip] = username
                 logging.info(f"Добавили клиента {client_ip} в список авторизации")
-        # Если авторизация не удалась, но пользователь с таким ip существует
+        # авторизация не удалась, но пользователь с таким ip существует
         elif auth_result == 0:
             logger.info(f"Клиент {client_ip} -> авторизация не удалась")
             data = {"result": False, "description": "wrong auth"}
-        # Если пользователя с таким ip не существует, то необходима регистрация
+        # пользователя с таким ip не существует, то необходима регистрация
         else:
             logger.info(
                 f"Клиент {client_ip} -> необходима предварительная регистрация в системе"
@@ -171,14 +166,13 @@ class Server:
         self.send_message(conn, data, client_ip)
         logger.info(f"Клиент {client_ip}. Отправили данные о результате авторизации")
 
-        # Если была успешная авторизация - принимаем последующие сообщения от пользователя
+        # принимаем последующие сообщения от пользователя (при успешной авторизации
         if auth_result == 1:
             self.message_logic(conn, client_ip)
 
     def router(self, conn, addr):
-        """
-        Роутинг в зависимости от авторизации клиента
-        """
+        # Роутинг в зависимости от авторизации клиента
+        
         logger.info("Router работает в отдельном потоке!")
         client_ip = addr[0]
 
