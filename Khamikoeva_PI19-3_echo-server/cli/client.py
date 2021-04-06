@@ -25,7 +25,7 @@ class Client:
         self.sock = None
         self.new_connection()
 
-        # Авторизуемся
+        # Авторизация
         self.send_auth()
 
         # Поток чтения данных от сервера
@@ -37,7 +37,7 @@ class Client:
         self.user_processing()
 
     def new_connection(self):
-        """Осуществляет новое соединение по сокету"""
+        # Осуществление новое соединение по сокету
 
         ip, port = self.server_ip, self.port_number
         sock = socket.socket()
@@ -47,7 +47,7 @@ class Client:
         logging.info(f"Успешное соединение с сервером {ip}:{port}")
 
     def send_reg(self, password):
-        """Логика регистрации пользователя в системе"""
+        # Регистрация пользователя в системе
         print("*Новая регистрация в системе*")
         while True:
             input_username = input("Введите ваше имя пользователя (ник) -> ")
@@ -71,7 +71,7 @@ class Client:
                 break
 
     def send_auth(self):
-        """Логика авторизации клиента"""
+        #Логика авторизация клиента
         login_iter = 1
         while True:
 
@@ -94,21 +94,21 @@ class Client:
                 # Получаем данные с сервера
                 response = json.loads(self.sock.recv(1024).decode())
 
-                # Если успешно авторизовались
+                # При успешной авторизации
                 if response["result"]:
                     print(
                         "Авторизация прошла успешно, можете вводить сообщения для отправки:"
                     )
                     break
 
-                # Если авторизация не удалась
+                # При безуспешной авторизации
                 elif response["description"] == "wrong auth":
                     print("Неверный пароль!")
                     # Делаем новое соединение
                     # т.к. сервер рвет соединение, если авторизация не удалась
                     self.new_connection()
 
-                # Если это первый вход с таким ip-адресом, то необходима регистрация
+                # Регистрация при первом входе в систему с таким ip-адресом
                 elif response["description"] == "registration required":
                     self.new_connection()
                     self.send_reg(user_password)
@@ -125,14 +125,14 @@ class Client:
             login_iter += 1
 
     def read_message(self):
-        """Чтение сообщения"""
+        # Логика чтения сообщения
         data = ""
         while True:
-            # Получаем данные и собираем их по кусочкам
+            # Получение (и сборка) данных по частям
             chunk = self.sock.recv(1024)
             data += chunk.decode()
 
-            # Если это конец сообщения, то значит, что мы все собрали и можем обратно отдавать клиенту
+            # При получении конечной части сообщения
             if END_MESSAGE_FLAG in data:
                 logger.info(f"Прием данных от сервера: '{data}'")
                 data = data.replace(END_MESSAGE_FLAG, "")
@@ -143,14 +143,14 @@ class Client:
                 print(f"[{user_name}] {message_text}")
                 data = ""
 
-            # Если приняли часть данных - сообщаем
+            # При принятии части данных
             else:
                 logger.info(f"Приняли часть данных от сервера: '{data}'")
 
     def send_message(self, message: str):
-        """Отправка сообщения"""
+        # Как отправляется сообщения
 
-        # Добавляем флаг конца сообщения (по-другому я не знаю как передавать больше 1024 и не разрывать соединение)
+        # Добавляем флаг конца сообщения
         message += END_MESSAGE_FLAG
 
         # Отправляем сообщение
@@ -158,7 +158,7 @@ class Client:
         logger.info(f"Отправка данных серверу: '{message}'")
 
     def user_processing(self):
-        """Обработка ввода сообщений пользователя"""
+        # Обработка ввода сообщений пользователя
 
         while True:
             msg = input()
@@ -177,14 +177,14 @@ class Client:
 def main():
     port_input = input("Введите номер порта сервера -> ")
     port_flag = port_validation(port_input)
-    # Если некорректный ввод
+    # некорректный ввод
     if not port_flag:
         port_input = DEFAULT_PORT
         print(f"Выставили порт {port_input} по умолчанию")
 
     ip_input = input("Введите ip-адрес сервера -> ")
     ip_flag = ip_validation(ip_input)
-    # Если некорректный ввод
+    # некорректный ввод
     if not ip_flag:
         ip_input = DEFAULT_IP
         print(f"Выставили ip-адрес {ip_input} по умолчанию")
