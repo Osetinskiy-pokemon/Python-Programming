@@ -3,19 +3,19 @@ from typing import Any
 
 
 def port_validation(value: Any, check_open: bool = False) -> bool:
-    """Проверка на корректность порта"""
+    #Проверяем порт на корректность
     try:
         # Проверка на число
         value = int(value)
-        # Проверка на диапазон
+        # Проверка на вхождение в диапазон
         if 1 <= value <= 65535:
-            # Проверка то, занят ли порт
+            # занят ли порт
             if check_open:
                 return check_port_open(value)
             print(f"Корректный порт {value}")
             return True
 
-        print(f"Некорректное значение {value} для порта")
+        print(f"Некорректное значение {value} для порта!")
         return False
 
     except ValueError:
@@ -24,11 +24,9 @@ def port_validation(value: Any, check_open: bool = False) -> bool:
 
 
 def check_port_open(port: int) -> bool:
-    """
-    Проверка на свободный порт port
-
-    Является частью логики port_validation
-    """
+    #Проверка на свободный порт port
+    #Относится к port_validation
+  
     try:
         sock = socket.socket()
         sock.bind(("", port))
@@ -41,7 +39,7 @@ def check_port_open(port: int) -> bool:
 
 
 def ip_validation(address: str) -> bool:
-    """Проверка на корректность ip-адреса (v4)"""
+    #Проверка на корректность ip-адреса (v4)
     error_message = f"Некорректный ip-адрес {address}"
     ok_message = f"Корректный ip-адрес {address}"
     try:
