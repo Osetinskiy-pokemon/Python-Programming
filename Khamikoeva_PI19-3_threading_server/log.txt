@@ -1,0 +1,646 @@
+05:41:33.841	Server was bound:	127.0.0.1:53121
+05:41:33.841	Server started listening
+05:41:36.280	Server shutdown in 3 sec...
+05:41:37.281	Server shutdown in 2 sec...
+05:41:38.283	Server shutdown in 1 sec...
+05:47:58.124	Server was bound:	127.0.0.1:53193
+05:47:58.124	Server started listening
+05:48:00.787	Server shutdown in 3 sec...
+05:48:01.788	Server shutdown in 2 sec...
+05:48:02.790	Server shutdown in 1 sec...
+05:51:14.057	Server was bound:	127.0.0.1:53324
+05:51:14.058	Server started listening
+05:51:45.696	Server was bound:	127.0.0.1:40096
+05:51:45.696	Server started listening
+05:51:47.121	New connection from:	127.0.0.1:8899
+05:51:47.123	Close connection:	127.0.0.1:8899
+05:52:09.628	Server was bound:	127.0.0.1:40096
+05:52:09.629	Server started listening
+05:52:11.300	New connection from:	127.0.0.1:8899
+05:52:11.301	Close connection:	127.0.0.1:8899
+05:52:20.665	Server shutdown in 3 sec...
+05:52:21.666	Server shutdown in 2 sec...
+05:52:22.668	Server shutdown in 1 sec...
+05:52:42.232	New connection from:	127.0.0.1:8899
+05:52:42.233	Close connection:	127.0.0.1:8899
+05:58:53.891	Server was bound:	127.0.0.1:40096
+05:58:53.891	Server started listening
+05:59:01.279	Unidentified command: /crear-userss
+05:59:18.639	Server was bound:	127.0.0.1:40096
+05:59:18.639	Server started listening
+06:03:29.023	Server was bound:	127.0.0.1:40096
+06:03:29.023	Server started listening
+06:03:30.401	New connection from:	127.0.0.1:8899
+06:03:30.402	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:30.410	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:30.410	Close connection:	127.0.0.1:8899
+06:03:37.020	Server shutdown in 3 sec...
+06:03:38.022	Server shutdown in 2 sec...
+06:03:39.023	Server shutdown in 1 sec...
+06:03:39.271	New connection from:	127.0.0.1:8899
+06:03:39.272	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:39.274	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:39.274	Close connection:	127.0.0.1:8899
+06:03:49.250	New connection from:	127.0.0.1:8899
+06:03:49.251	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:49.254	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:49.254	Close connection:	127.0.0.1:8899
+06:03:53.449	New connection from:	127.0.0.1:8899
+06:03:53.450	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:53.452	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:53.452	Close connection:	127.0.0.1:8899
+06:03:55.738	New connection from:	127.0.0.1:8899
+06:03:55.739	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:55.741	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:55.741	Close connection:	127.0.0.1:8899
+06:03:56.975	New connection from:	127.0.0.1:8899
+06:03:56.975	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:56.977	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:56.977	Close connection:	127.0.0.1:8899
+06:03:57.570	New connection from:	127.0.0.1:8899
+06:03:57.570	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:57.572	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:57.572	Close connection:	127.0.0.1:8899
+06:03:58.143	New connection from:	127.0.0.1:8899
+06:03:58.143	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:58.145	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:58.145	Close connection:	127.0.0.1:8899
+06:03:58.761	New connection from:	127.0.0.1:8899
+06:03:58.762	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:58.764	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:58.764	Close connection:	127.0.0.1:8899
+06:03:59.528	New connection from:	127.0.0.1:8899
+06:03:59.529	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:03:59.530	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:03:59.531	Close connection:	127.0.0.1:8899
+06:05:52.581	Server was bound:	127.0.0.1:40096
+06:05:52.581	Server started listening
+06:05:53.915	New connection from:	127.0.0.1:8899
+06:05:53.916	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:05:53.921	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:05:53.921	Close connection:	127.0.0.1:8899
+06:05:57.071	Server shutdown in 3 sec...
+06:05:58.073	Server shutdown in 2 sec...
+06:05:59.075	Server shutdown in 1 sec...
+06:05:59.085	New connection from:	127.0.0.1:8899
+06:05:59.086	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:05:59.088	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:05:59.088	Close connection:	127.0.0.1:8899
+06:06:09.227	New connection from:	127.0.0.1:8899
+06:06:09.228	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:09.230	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:09.231	Close connection:	127.0.0.1:8899
+06:06:12.226	New connection from:	127.0.0.1:8899
+06:06:12.227	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:12.229	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:12.229	Close connection:	127.0.0.1:8899
+06:06:32.171	Server was bound:	127.0.0.1:40096
+06:06:32.172	Server started listening
+06:06:33.163	New connection from:	127.0.0.1:8899
+06:06:33.165	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:33.173	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:33.173	Close connection:	127.0.0.1:8899
+06:06:37.613	Server shutdown in 3 sec...
+06:06:38.614	Server shutdown in 2 sec...
+06:06:39.426	New connection from:	127.0.0.1:8899
+06:06:39.427	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:39.429	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:39.429	Close connection:	127.0.0.1:8899
+06:06:39.616	Server shutdown in 1 sec...
+06:06:40.014	New connection from:	127.0.0.1:8899
+06:06:40.015	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:40.017	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:40.017	Close connection:	127.0.0.1:8899
+06:06:46.089	New connection from:	127.0.0.1:8899
+06:06:46.090	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:46.092	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:46.092	Close connection:	127.0.0.1:8899
+06:06:55.160	New connection from:	127.0.0.1:8899
+06:06:55.161	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:55.163	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:55.163	Close connection:	127.0.0.1:8899
+06:06:57.328	Server was bound:	127.0.0.1:40096
+06:06:57.328	Server started listening
+06:06:59.672	New connection from:	127.0.0.1:8899
+06:06:59.673	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:06:59.678	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:06:59.678	Close connection:	127.0.0.1:8899
+06:07:05.771	New connection from:	127.0.0.1:8899
+06:07:05.772	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:07:05.774	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:07:05.774	Close connection:	127.0.0.1:8899
+06:07:06.518	New connection from:	127.0.0.1:8899
+06:07:06.519	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:07:06.522	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:07:06.522	Close connection:	127.0.0.1:8899
+06:07:35.084	Server was bound:	127.0.0.1:40096
+06:07:35.085	Server started listening
+06:07:35.087	Server is shutdown!
+06:07:53.020	Server was bound:	127.0.0.1:40096
+06:07:53.021	Server started listening
+06:07:56.483	New connection from:	127.0.0.1:8899
+06:07:56.485	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:07:56.491	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:07:56.491	Close connection:	127.0.0.1:8899
+06:08:00.651	New connection from:	127.0.0.1:8899
+06:08:00.652	Close connection:	127.0.0.1:8899
+06:08:16.859	Server was bound:	127.0.0.1:40096
+06:08:16.859	Server started listening
+06:08:22.689	New connection from:	127.0.0.1:8899
+06:08:22.689	Close connection:	127.0.0.1:8899
+06:08:24.723	New connection from:	127.0.0.1:8899
+06:08:24.724	Close connection:	127.0.0.1:8899
+06:08:35.710	New connection from:	127.0.0.1:8899
+06:08:35.711	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:08:35.715	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:08:35.715	Close connection:	127.0.0.1:8899
+06:08:36.557	New connection from:	127.0.0.1:8899
+06:08:36.558	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:08:36.560	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:08:36.560	Close connection:	127.0.0.1:8899
+06:08:40.860	New connection from:	127.0.0.1:8899
+06:08:40.860	Close connection:	127.0.0.1:8899
+06:15:47.488	Server was bound:	127.0.0.1:40096
+06:15:47.489	Server started listening
+06:15:52.895	New connection from:	127.0.0.1:8899
+06:15:52.896	Thread: Thread-2
+06:15:52.896	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'content-length': 15,
+             'cookies-length': 21},
+ 'cookies': {'session-token': ''},
+ 'content': 'Hello, world!'}
+
+06:15:52.901	Sent to 127.0.0.1:8899:
+ {'status': 403,
+ 'headers': {},
+ 'cookies': {},
+ 'content': 'The user is not logged in. Headers with parameters are required: '
+            "'username', 'password'"}
+
+06:15:52.901	Close connection:	127.0.0.1:8899
+06:16:04.175	New connection from:	127.0.0.1:8899
+06:16:04.175	Thread: Thread-3
+06:16:04.176	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {},
+ 'content': 'Hello, world!'}
+
+06:16:04.223	Close connection:	127.0.0.1:8899
+06:16:56.215	Server was bound:	127.0.0.1:40096
+06:16:56.216	Server started listening
+06:17:03.147	New connection from:	127.0.0.1:8899
+06:17:03.147	Thread: Thread-2
+06:17:03.148	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {},
+ 'content': 'Hello, world!'}
+
+06:17:03.153	Sent to 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {'session-token': '527ca6e2-ad95-47dc-b35b-5ff3b992aebd',
+             'session-start': '06:17:03 - 04.07.2021'},
+ 'content': 'Authorization is successful!\nWelcome, admin'}
+
+06:17:03.153	Close connection:	127.0.0.1:8899
+06:18:22.156	Server was bound:	127.0.0.1:40096
+06:18:22.157	Server started listening
+06:18:23.167	New connection from:	127.0.0.1:8899
+06:18:23.168	Thread: Thread-2
+06:18:23.169	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {},
+ 'content': 'Hello, world!'}
+
+06:18:23.273	Sent to 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {'session-token': '059ac37d-6b87-4288-9551-7731ca2beae0',
+             'session-start': '06:18:23 - 04.07.2021'},
+ 'content': 'Authorization is successful!\nWelcome, admin'}
+
+06:18:23.273	Close connection:	127.0.0.1:8899
+06:18:32.123	New connection from:	127.0.0.1:8899
+06:18:32.123	Thread: Thread-3
+06:18:32.124	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {},
+ 'content': 'Hello, world!'}
+
+06:18:32.218	Sent to 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {'session-token': '7dff4bb8-d60c-40d1-993a-360a74abc698',
+             'session-start': '06:18:32 - 04.07.2021'},
+ 'content': 'Authorization is successful!\nWelcome, admin'}
+
+06:18:32.219	Close connection:	127.0.0.1:8899
+06:18:43.046	New connection from:	127.0.0.1:8899
+06:18:43.047	Thread: Thread-4
+06:18:43.047	Received from 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {},
+ 'content': 'Hello, world!'}
+
+06:18:43.152	Sent to 127.0.0.1:8899:
+ {'status': 200,
+ 'headers': {'encoding': 'utf-8',
+             'username': 'admin',
+             'password': 'admin',
+             'content-length': 15,
+             'cookies-length': 2},
+ 'cookies': {'session-token': 'ff97a447-f0fc-4dea-bb56-f3d283a0300c',
+             'session-start': '06:18:43 - 04.07.2021'},
+ 'content': 'Authorization is successful!\nWelcome, admin'}
+
+06:18:43.152	Close connection:	127.0.0.1:8899
